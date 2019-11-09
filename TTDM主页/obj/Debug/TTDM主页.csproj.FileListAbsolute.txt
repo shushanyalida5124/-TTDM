@@ -1,0 +1,11 @@
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM主页.exe.config
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM主页.exe
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM主页.pdb
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.csprojAssemblyReference.cache
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.LoginFrom.resources
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.Properties.Resources.resources
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.csproj.GenerateResource.cache
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.csproj.CoreCompileInputs.cache
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.exe
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.pdb
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.FormMainPage.resources
