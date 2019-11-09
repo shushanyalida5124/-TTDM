@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTDM主页", "TTDM主页.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTDM-DAL", "..\TTDM-DAL\TTDM-DAL.csproj", "{BC1B524A-BC57-4E60-855B-6AAB5AD33528}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTDM-BLL", "..\TTDM-BLL\TTDM-BLL.csproj", "{8223E101-DEC3-4C29-BB0D-C7C26BDDCABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BC1B524A-BC57-4E60-855B-6AAB5AD33528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC1B524A-BC57-4E60-855B-6AAB5AD33528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC1B524A-BC57-4E60-855B-6AAB5AD33528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8223E101-DEC3-4C29-BB0D-C7C26BDDCABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8223E101-DEC3-4C29-BB0D-C7C26BDDCABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8223E101-DEC3-4C29-BB0D-C7C26BDDCABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8223E101-DEC3-4C29-BB0D-C7C26BDDCABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

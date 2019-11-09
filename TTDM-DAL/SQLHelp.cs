@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace TTDM_DAL
 {
-    class SQLHelp
+    public class SQLHelp
     {
         public static string strConnectionstr;
         public static DataTable ExcuteQurry(string sql)
