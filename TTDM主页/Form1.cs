@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTDM_BLL;
 
 namespace TTDM主页
 {
@@ -26,13 +27,36 @@ namespace TTDM主页
         {
 
         }
-
+        public User currentUser = new User();
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            //TODO:检查用户
-
-
-            new FormMainPage().Show();
+            string strUserName = textUserName.Text.Trim();
+            string strPassWord = textPwd.Text.Trim();
+            //TODO:检查用户有效性
+            if (strUserName!=null&&strUserName.Length==0)
+            {
+                MessageBox.Show("请输入用户名");
+                textUserName.Focus();
+                return;
+            }
+            if (strPassWord.Length==0)
+            {
+                MessageBox.Show("请输入密码");
+                textPwd.Focus();
+                return;
+            }
+            ;
+            currentUser = new User(strUserName, strPassWord);
+            if (currentUser.IsUserValid())
+            {
+                this.DialogResult = DialogResult.OK;
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("用户名或密码错误，请核对后输入");
+                textUserName.Focus();
+            }
         }
     }
 }

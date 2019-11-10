@@ -9,3 +9,8 @@ E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.csproj.CoreCompileInputs.cache
 E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.exe
 E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.pdb
 E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.FormMainPage.resources
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-BLL.dll
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-DAL.dll
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-BLL.pdb
+E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-DAL.pdb
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.csproj.CopyComplete

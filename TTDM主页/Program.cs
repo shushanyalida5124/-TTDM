@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TTDM_BLL;
 
 namespace TTDM主页
 {
@@ -17,7 +17,15 @@ namespace TTDM主页
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginFrom());
+            //Application.Run(new LoginFrom());
+
+            LoginFrom loginFrom = new LoginFrom();
+            loginFrom.ShowDialog();
+
+            if (loginFrom.DialogResult==DialogResult.OK)
+            {
+                Application.Run(new FormMainPage(loginFrom.currentUser));
+            }
         }
     }
 }

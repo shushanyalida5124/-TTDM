@@ -1,0 +1,9 @@
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\TTDM-BLL.dll
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\TTDM-BLL.pdb
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\TTDM-DAL.dll
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\TTDM-DAL.pdb
+E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.csprojAssemblyReference.cache
+E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.csproj.CoreCompileInputs.cache
+E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.csproj.CopyComplete
+E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.dll
+E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.pdb

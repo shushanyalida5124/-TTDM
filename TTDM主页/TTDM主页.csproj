@@ -89,5 +89,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TTDM-BLL\TTDM-BLL.csproj">
+      <Project>{8223e101-dec3-4c29-bb0d-c7c26bddcabf}</Project>
+      <Name>TTDM-BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

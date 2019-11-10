@@ -31,6 +31,7 @@
             this.btnDM = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDM
@@ -67,16 +68,26 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "学号";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 12);
+            this.label3.TabIndex = 2;
+            // 
             // FormMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 303);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDM);
             this.Name = "FormMainPage";
             this.Text = "天天点名";
+            this.Load += new System.EventHandler(this.FormMainPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,5 +98,6 @@
         private System.Windows.Forms.Button btnDM;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

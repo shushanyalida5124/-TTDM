@@ -1,0 +1,6 @@
+E:\Git\-TTDM\TTDM-DAL\bin\Debug\TTDM-DAL.dll
+E:\Git\-TTDM\TTDM-DAL\bin\Debug\TTDM-DAL.pdb
+E:\Git\-TTDM\TTDM-DAL\obj\Debug\TTDM-DAL.csprojAssemblyReference.cache
+E:\Git\-TTDM\TTDM-DAL\obj\Debug\TTDM-DAL.csproj.CoreCompileInputs.cache
+E:\Git\-TTDM\TTDM-DAL\obj\Debug\TTDM-DAL.dll
+E:\Git\-TTDM\TTDM-DAL\obj\Debug\TTDM-DAL.pdb
