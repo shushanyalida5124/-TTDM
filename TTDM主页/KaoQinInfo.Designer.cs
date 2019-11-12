@@ -136,11 +136,13 @@
             // 
             this.class_name.HeaderText = "班级";
             this.class_name.Name = "class_name";
+            this.class_name.ReadOnly = true;
             // 
             // course_name
             // 
             this.course_name.HeaderText = "课程";
             this.course_name.Name = "course_name";
+            this.course_name.ReadOnly = true;
             // 
             // atttendence_no
             // 
