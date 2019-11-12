@@ -10,7 +10,7 @@ namespace TTDM_DAL
 {
     public class SQLHelp
     {
-        public static string strConnectionstr;
+        public static string strConnectionstr = "server=106.13.209.191,1433;database=ttdmKaoqin;uid=ttdm1;pwd=jj785065948";
         public static DataTable ExcuteQurry(string sql)
         {
             try

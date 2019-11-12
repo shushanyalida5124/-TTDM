@@ -14,3 +14,5 @@ E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-DAL.dll
 E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-BLL.pdb
 E:\Git\-TTDM\TTDM主页\bin\Debug\TTDM-DAL.pdb
 E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.csproj.CopyComplete
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.KaoQinInfo.resources
+E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.FormPwdUpdate.resources

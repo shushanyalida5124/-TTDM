@@ -59,6 +59,18 @@
     <Compile Include="FormMainPage.Designer.cs">
       <DependentUpon>FormMainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPwdUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPwdUpdate.Designer.cs">
+      <DependentUpon>FormPwdUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KaoQinInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KaoQinInfo.Designer.cs">
+      <DependentUpon>KaoQinInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -66,6 +78,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainPage.resx">
       <DependentUpon>FormMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPwdUpdate.resx">
+      <DependentUpon>FormPwdUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KaoQinInfo.resx">
+      <DependentUpon>KaoQinInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

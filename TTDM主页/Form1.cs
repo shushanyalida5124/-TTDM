@@ -32,7 +32,7 @@ namespace TTDM主页
         {
             string strUserName = textUserName.Text.Trim();
             string strPassWord = textPwd.Text.Trim();
-            //TODO:检查用户有效性
+            //检查用户有效性
             if (strUserName!=null&&strUserName.Length==0)
             {
                 MessageBox.Show("请输入用户名");

@@ -24,6 +24,12 @@ namespace TTDM_BLL
             StuName = name;
         }
 
-        
+        //缺勤
+        public void Attentent()
+        {
+            string sql = string.Format("update t_sc set attendence_no='{0}' where stu_no='{1}'", AbsentNo + 1,StuID);
+            this.AbsentNo++;
+            SQLHelp.ExcuteUpdate(sql);   
+        }
     }
 }
