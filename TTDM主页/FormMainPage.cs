@@ -39,6 +39,7 @@ namespace TTDM主页
         private void FormMainPage_Load(object sender, EventArgs e)
         {
             label3.Text = "你好," + user.Name;
+            
         }
 
         private void Label3_Click(object sender, EventArgs e)
@@ -48,12 +49,22 @@ namespace TTDM主页
 
         private void 考勤信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new KaoQinInfo(user).Show();
+            new KaoQinInfo(user).ShowDialog();
         }
 
         private void PsdUpdate_Click(object sender, EventArgs e)
         {
-            new FormPwdUpdate(user).Show();
+            new FormPwdUpdate(user).ShowDialog();
+        }
+
+        private void 添加课程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormAddCourse(user).ShowDialog();
+        }
+
+        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

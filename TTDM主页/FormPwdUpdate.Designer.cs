@@ -50,6 +50,7 @@
             // 
             this.txtOldPwd.Location = new System.Drawing.Point(98, 35);
             this.txtOldPwd.Name = "txtOldPwd";
+            this.txtOldPwd.PasswordChar = '*';
             this.txtOldPwd.Size = new System.Drawing.Size(100, 21);
             this.txtOldPwd.TabIndex = 1;
             // 
@@ -66,6 +67,7 @@
             // 
             this.txtNewPwd1.Location = new System.Drawing.Point(98, 62);
             this.txtNewPwd1.Name = "txtNewPwd1";
+            this.txtNewPwd1.PasswordChar = '*';
             this.txtNewPwd1.Size = new System.Drawing.Size(100, 21);
             this.txtNewPwd1.TabIndex = 1;
             // 
@@ -82,6 +84,7 @@
             // 
             this.txtNewPwd2.Location = new System.Drawing.Point(98, 89);
             this.txtNewPwd2.Name = "txtNewPwd2";
+            this.txtNewPwd2.PasswordChar = '*';
             this.txtNewPwd2.Size = new System.Drawing.Size(100, 21);
             this.txtNewPwd2.TabIndex = 1;
             // 

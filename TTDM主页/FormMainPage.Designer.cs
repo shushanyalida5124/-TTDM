@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.考勤信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psdUpdate = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,10 +86,11 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.考勤信息ToolStripMenuItem});
+            this.考勤信息ToolStripMenuItem,
+            this.添加课程ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(597, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(598, 25);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,6 +100,13 @@
             this.考勤信息ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.考勤信息ToolStripMenuItem.Text = "考勤信息";
             this.考勤信息ToolStripMenuItem.Click += new System.EventHandler(this.考勤信息ToolStripMenuItem_Click);
+            // 
+            // 添加课程ToolStripMenuItem
+            // 
+            this.添加课程ToolStripMenuItem.Name = "添加课程ToolStripMenuItem";
+            this.添加课程ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.添加课程ToolStripMenuItem.Text = "添加课程";
+            this.添加课程ToolStripMenuItem.Click += new System.EventHandler(this.添加课程ToolStripMenuItem_Click);
             // 
             // psdUpdate
             // 
@@ -116,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 303);
+            this.ClientSize = new System.Drawing.Size(598, 309);
             this.Controls.Add(this.psdUpdate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -142,5 +151,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 考勤信息ToolStripMenuItem;
         private System.Windows.Forms.Button psdUpdate;
+        private System.Windows.Forms.ToolStripMenuItem 添加课程ToolStripMenuItem;
     }
 }

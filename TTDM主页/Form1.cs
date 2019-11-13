@@ -20,7 +20,11 @@ namespace TTDM主页
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            User testUser = new User();
+            testUser.ID = "0001";
+            testUser.Add();
+            label3.Text = "测试账号：" + testUser.ID;
+            label4.Text = "测试账号密码：" + testUser.Password;
         }
 
         private void Button1_Click(object sender, EventArgs e)

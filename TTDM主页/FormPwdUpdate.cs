@@ -46,6 +46,10 @@ namespace TTDM主页
                 MessageBox.Show("修改成功");
                 this.Close();
             }
+            else
+            {
+                MessageBox.Show("密码错误");
+            }
         }
     }
 }

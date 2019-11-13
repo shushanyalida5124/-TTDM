@@ -51,9 +51,9 @@ namespace TTDM主页
             }
             else
             {
-                sql = "select t_student.stu_no,t_student.stu_name,attendence_no,class_name,t_course.course_name from t_student join t_sc on " +
+                sql = string.Format("select t_student.stu_no,t_student.stu_name,attendence_no,class_name,t_course.course_name from t_student join t_sc on " +
               "t_student.stu_no=t_sc.stu_no join t_course on" +
-              " t_sc.course_no=t_course.course_no";
+              " t_sc.course_no=t_course.course_no where user_id='{0}'",user.ID);
             }
             DataTable dt = user.Qurry(sql);
             int n = dt.Rows.Count;

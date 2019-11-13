@@ -14,6 +14,12 @@ namespace TTDM_BLL
         public string Name { get; set; }
         private string password;
 
+
+        public  string Password
+        {
+            get { return password; }
+        }
+
         public User()
         {
 
@@ -64,9 +70,10 @@ namespace TTDM_BLL
         //将只有id的user补充完整
         public void Add()
         {
-            string sql = string.Format("select * from t_user where user_id={0}",this.ID);
+            string sql = string.Format("select * from t_user where user_id='{0}'",this.ID);
             DataTable dt = SQLHelp.ExcuteQurry(sql);
             this.Name = dt.Rows[0].Field<string>("user_name");
+            this.password = dt.Rows[0].Field<string>("user_psd");
         }
         //查询学生
         public DataTable Qurry(string sql)
@@ -80,8 +87,15 @@ namespace TTDM_BLL
         public void UpdatePwd(string pwd)
         {
             string sql = string.Format("update t_user set user_psd='{0}' where " +
-                "user_id={1}",pwd,this.ID);
+                "user_id='{1}'",pwd,this.ID);
             SQLHelp.ExcuteUpdate(sql);
+        }
+
+        //添加课程
+        public int AddCourse(string courseName,string courseNO)
+        {
+            string sql = string.Format("insert into t_course values('{0}','{1}','{2}')",courseNO,this.ID,courseName);
+            return SQLHelp.ExcuteUpdate(sql);
         }
     }
 }
