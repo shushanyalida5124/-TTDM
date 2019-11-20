@@ -13,7 +13,7 @@ namespace TTDM_BLL
         public string ID { get; set; }
         public string Name { get; set; }
         private string password;
-
+        public string[] coursesNo = new string[8];
 
         public  string Password
         {
@@ -74,6 +74,36 @@ namespace TTDM_BLL
             DataTable dt = SQLHelp.ExcuteQurry(sql);
             this.Name = dt.Rows[0].Field<string>("user_name");
             this.password = dt.Rows[0].Field<string>("user_psd");
+            sql = string.Format("select * from t_student join  t_sc on t_student.stu_no = t_sc.stu_no join t_course on t_sc.course_no = t_course.course_no join t_user on t_course.user_id = t_user.user_id where t_user.user_id = '{0}'", this.ID);
+            dt = SQLHelp.ExcuteQurry(sql);
+            int n = dt.Rows.Count;
+            if (n>0)
+            {
+                string courseNo;
+                bool flag;
+                int i = 0;
+                foreach (DataRow item in dt.Rows)
+                {
+                    courseNo = item.Field<string>("course_no");
+                    foreach (var no in coursesNo)
+                    {
+                        if (no==courseNo)
+                        {
+                            flag = false;
+                        }
+                        else
+                        {
+                            flag = false;
+                        }
+                        if (flag)
+                        {
+                            coursesNo[i] = courseNo;
+                            i++;
+                        }
+                    }
+                }
+            }
+
         }
         //查询学生
         public DataTable Qurry(string sql)

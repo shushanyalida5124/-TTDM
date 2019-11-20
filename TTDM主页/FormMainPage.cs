@@ -28,6 +28,7 @@ namespace TTDM主页
             Student luckyStu = user.Roll();
             label1.Text = luckyStu.StuName;
             label2.Text = luckyStu.StuID;
+            luckyStu.Report();
             DialogResult result= MessageBox.Show("学生是否到了","",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (result==DialogResult.No)
             {
@@ -38,7 +39,7 @@ namespace TTDM主页
 
         private void FormMainPage_Load(object sender, EventArgs e)
         {
-            label3.Text = "你好," + user.Name;
+            label3.Text = "你好," + user.Name; 
             
         }
 
@@ -63,6 +64,11 @@ namespace TTDM主页
         }
 
         private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CheckBox4_CheckedChanged(object sender, EventArgs e)
         {
 
         }

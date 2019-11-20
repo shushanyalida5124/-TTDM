@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TTDM_DAL;
 using System.Data;
+using System.Speech.Synthesis;
 
 namespace TTDM_BLL
 {
@@ -30,6 +31,12 @@ namespace TTDM_BLL
             string sql = string.Format("update t_sc set attendence_no='{0}' where stu_no='{1}'", AbsentNo + 1,StuID);
             this.AbsentNo++;
             SQLHelp.ExcuteUpdate(sql);   
+        }
+        public void Report()
+        {
+            SpeechSynthesizer speech = new SpeechSynthesizer();
+            speech.Rate = -2;
+            speech.Speak(this.StuName);
         }
     }
 }
