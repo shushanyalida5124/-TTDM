@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTDM_BLL;
+using System.Collections.Generic;
+using System.Collections;
 
 
 namespace TTDM主页
@@ -15,6 +17,7 @@ namespace TTDM主页
     public partial class FormMainPage : Form
     {
         User user;
+        List<Student> rolledStudents = new List<Student>(); 
         public FormMainPage(User user)
         {
             this.user = user;
@@ -25,7 +28,24 @@ namespace TTDM主页
 
         private void BtnDM_Click(object sender, EventArgs e)
         {
-            Student luckyStu = user.Roll();
+            Student luckyStu;
+            bool isRolled;
+            do
+            {
+                luckyStu = user.Roll();
+                isRolled = false;
+                foreach (Student stu in rolledStudents)
+                {
+                    if (rolledStudents.Count!=0&& stu.StuID==luckyStu.StuID)
+                    {
+                        isRolled = true;
+                        break;
+                    }
+                }
+            }
+            while (isRolled);
+
+            rolledStudents.Add(luckyStu);
             label1.Text = luckyStu.StuName;
             label2.Text = luckyStu.StuID;
             luckyStu.Report();
