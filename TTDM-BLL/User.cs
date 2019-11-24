@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using TTDM_DAL;
+using System.Collections;
+using System.IO;
 
 namespace TTDM_BLL
 {
@@ -99,7 +101,7 @@ namespace TTDM_BLL
                         {
                             coursesNo[i] = courseNo;
                             i++;
-                        }
+                        } 
                     }
                 }
             }
@@ -126,6 +128,26 @@ namespace TTDM_BLL
         {
             string sql = string.Format("insert into t_course values('{0}','{1}','{2}')",courseNO,this.ID,courseName);
             return SQLHelp.ExcuteUpdate(sql);
+        }
+        static public void Export(DataTable dt,string filename )
+        {
+            List<string> infoList = new List<string>();
+            for (int r = 0; r < dt.Rows.Count; r++)
+           {
+                string info="";
+               for (int c = 0; c < dt.Columns.Count; c++)
+               {
+                   DataRow dr = dt.Rows[r];
+                   info += dr[c] + " ";
+               }
+                infoList.Add(info);
+            }
+            StreamWriter sw = new StreamWriter(filename);
+            foreach (string i in infoList)
+            {
+                sw.WriteLine(i);
+            }
+            sw.Close();
         }
     }
 }

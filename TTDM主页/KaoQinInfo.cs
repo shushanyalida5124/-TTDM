@@ -13,6 +13,7 @@ namespace TTDM主页
     public partial class KaoQinInfo : Form
     {
         User user;
+        DataTable dt;
         public KaoQinInfo(User u)
         {
             user = u;
@@ -55,7 +56,7 @@ namespace TTDM主页
               "t_student.stu_no=t_sc.stu_no join t_course on" +
               " t_sc.course_no=t_course.course_no where user_id='{0}'",user.ID);
             }
-            DataTable dt = user.Qurry(sql);
+             dt = user.Qurry(sql);
             int n = dt.Rows.Count;
             dataGridView1.Rows.Clear();
             if (dt==null||n==0)
@@ -87,6 +88,21 @@ namespace TTDM主页
                 user.Update(sql);
             }
             MessageBox.Show("修改成功");
+            
+        }
+
+        private void BtnExport_Click(object sender, EventArgs e)
+        {
+             string filename= @"C:\Users\he\Desktop\考勤.txt";
+            if (dt.Rows.Count==0)
+            {
+                MessageBox.Show("学生信息为空");
+            }
+            else
+            {
+            User.Export(dt,filename);
+            MessageBox.Show("考勤信息已导出到"+filename+",请及时备份");
+            }
             
         }
     }

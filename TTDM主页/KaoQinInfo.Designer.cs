@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtStuNo = new System.Windows.Forms.TextBox();
             this.ctnQurry = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.stu_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stu_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.course_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.atttendence_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnExport = new CCWin.SkinControl.SkinButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,20 +108,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(543, 251);
             this.dataGridView1.TabIndex = 3;
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpdate.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(561, 284);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(86, 31);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "修改";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
-            // 
             // stu_no
             // 
             this.stu_no.HeaderText = "学号";
@@ -149,11 +137,41 @@
             this.atttendence_no.HeaderText = "缺勤次数";
             this.atttendence_no.Name = "atttendence_no";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdate.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdate.Location = new System.Drawing.Point(561, 284);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(86, 31);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "修改";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExport.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnExport.DownBack = null;
+            this.btnExport.Location = new System.Drawing.Point(582, 23);
+            this.btnExport.MouseBack = null;
+            this.btnExport.Name = "btnExport";
+            this.btnExport.NormlBack = null;
+            this.btnExport.Size = new System.Drawing.Size(74, 24);
+            this.btnExport.TabIndex = 5;
+            this.btnExport.Text = "导出信息";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.BtnExport_Click);
+            // 
             // KaoQinInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 327);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ctnQurry);
@@ -185,5 +203,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn class_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn course_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn atttendence_no;
+        private CCWin.SkinControl.SkinButton btnExport;
     }
 }

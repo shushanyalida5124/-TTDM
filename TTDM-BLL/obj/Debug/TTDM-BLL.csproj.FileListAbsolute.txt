@@ -7,3 +7,8 @@ E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.csproj.CoreCompileInputs.cache
 E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.csproj.CopyComplete
 E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.dll
 E:\Git\-TTDM\TTDM-BLL\obj\Debug\TTDM-BLL.pdb
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\ICSharpCode.SharpZipLib.xml
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\Aspose.Cells.dll
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\Aspose.Cells-License\Aspose.Cells.dll
+E:\Git\-TTDM\TTDM-BLL\bin\Debug\Aspose.Cells-License\License.lic

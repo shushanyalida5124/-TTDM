@@ -19,3 +19,5 @@ E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.FormPwdUpdate.resources
 E:\Git\-TTDM\TTDM主页\obj\Debug\TTDM主页.FormAddCourse.resources
 E:\Git\-TTDM\TTDM主页\bin\Debug\CSkin.dll
 E:\Git\-TTDM\TTDM主页\bin\Debug\CSkin.xml
+E:\Git\-TTDM\TTDM主页\bin\Debug\Aspose.Cells-License\Aspose.Cells.dll
+E:\Git\-TTDM\TTDM主页\bin\Debug\Aspose.Cells-License\License.lic
