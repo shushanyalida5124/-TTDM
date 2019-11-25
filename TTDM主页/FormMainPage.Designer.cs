@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainPage));
             this.btnDM = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,6 +86,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.考勤信息ToolStripMenuItem,
             this.添加课程ToolStripMenuItem});
@@ -96,6 +98,8 @@
             // 
             // 考勤信息ToolStripMenuItem
             // 
+            this.考勤信息ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
+            this.考勤信息ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.考勤信息ToolStripMenuItem.Name = "考勤信息ToolStripMenuItem";
             this.考勤信息ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.考勤信息ToolStripMenuItem.Text = "考勤信息";
@@ -103,6 +107,7 @@
             // 
             // 添加课程ToolStripMenuItem
             // 
+            this.添加课程ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
             this.添加课程ToolStripMenuItem.Name = "添加课程ToolStripMenuItem";
             this.添加课程ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.添加课程ToolStripMenuItem.Text = "添加课程";
@@ -110,7 +115,7 @@
             // 
             // psdUpdate
             // 
-            this.psdUpdate.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.psdUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(163)))), ((int)(((byte)(220)))));
             this.psdUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.psdUpdate.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.psdUpdate.Location = new System.Drawing.Point(542, 2);
@@ -125,6 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(598, 309);
             this.Controls.Add(this.psdUpdate);
             this.Controls.Add(this.label3);
@@ -132,8 +138,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDM);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMainPage";
             this.Text = "天天点名";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Load += new System.EventHandler(this.FormMainPage_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

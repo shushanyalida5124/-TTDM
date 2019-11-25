@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KaoQinInfo));
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtStuNo = new System.Windows.Forms.TextBox();
-            this.ctnQurry = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.stu_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stu_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.course_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.atttendence_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnExport = new CCWin.SkinControl.SkinButton();
+            this.btnQurry = new CCWin.SkinControl.SkinButton();
+            this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
+            this.skinbtnUpdate = new CCWin.SkinControl.SkinButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,23 +80,12 @@
             this.txtStuNo.Location = new System.Drawing.Point(307, 24);
             this.txtStuNo.Name = "txtStuNo";
             this.txtStuNo.Size = new System.Drawing.Size(116, 23);
-            this.txtStuNo.TabIndex = 1;
+            this.txtStuNo.TabIndex = 2;
             this.txtStuNo.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            // 
-            // ctnQurry
-            // 
-            this.ctnQurry.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ctnQurry.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ctnQurry.Location = new System.Drawing.Point(468, 23);
-            this.ctnQurry.Name = "ctnQurry";
-            this.ctnQurry.Size = new System.Drawing.Size(75, 23);
-            this.ctnQurry.TabIndex = 2;
-            this.ctnQurry.Text = "查询";
-            this.ctnQurry.UseVisualStyleBackColor = false;
-            this.ctnQurry.Click += new System.EventHandler(this.CtnQurry_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stu_no,
@@ -106,7 +97,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(543, 251);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.TabIndex = 7;
             // 
             // stu_no
             // 
@@ -137,20 +128,6 @@
             this.atttendence_no.HeaderText = "缺勤次数";
             this.atttendence_no.Name = "atttendence_no";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpdate.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(561, 284);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(86, 31);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "修改";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
-            // 
             // btnExport
             // 
             this.btnExport.BackColor = System.Drawing.Color.Transparent;
@@ -161,26 +138,74 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.NormlBack = null;
             this.btnExport.Size = new System.Drawing.Size(74, 24);
-            this.btnExport.TabIndex = 5;
+            this.btnExport.TabIndex = 4;
             this.btnExport.Text = "导出信息";
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.BtnExport_Click);
             // 
+            // btnQurry
+            // 
+            this.btnQurry.BackColor = System.Drawing.Color.Transparent;
+            this.btnQurry.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnQurry.DownBack = null;
+            this.btnQurry.Location = new System.Drawing.Point(475, 23);
+            this.btnQurry.MouseBack = null;
+            this.btnQurry.Name = "btnQurry";
+            this.btnQurry.NormlBack = null;
+            this.btnQurry.Size = new System.Drawing.Size(80, 27);
+            this.btnQurry.TabIndex = 3;
+            this.btnQurry.Text = "查询";
+            this.btnQurry.UseVisualStyleBackColor = false;
+            this.btnQurry.Click += new System.EventHandler(this.SkinButton1_Click);
+            // 
+            // skinLabel1
+            // 
+            this.skinLabel1.AutoSize = true;
+            this.skinLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel1.BorderColor = System.Drawing.Color.White;
+            this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel1.Location = new System.Drawing.Point(561, 178);
+            this.skinLabel1.Name = "skinLabel1";
+            this.skinLabel1.Size = new System.Drawing.Size(104, 51);
+            this.skinLabel1.TabIndex = 7;
+            this.skinLabel1.Text = "将左侧表格中缺勤\r\n此时修改后点击修\r\n改按钮即可修改";
+            // 
+            // skinbtnUpdate
+            // 
+            this.skinbtnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.skinbtnUpdate.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinbtnUpdate.DownBack = null;
+            this.skinbtnUpdate.Location = new System.Drawing.Point(564, 272);
+            this.skinbtnUpdate.MouseBack = null;
+            this.skinbtnUpdate.Name = "skinbtnUpdate";
+            this.skinbtnUpdate.NormlBack = null;
+            this.skinbtnUpdate.Size = new System.Drawing.Size(86, 33);
+            this.skinbtnUpdate.TabIndex = 5;
+            this.skinbtnUpdate.Text = "修改";
+            this.skinbtnUpdate.UseVisualStyleBackColor = false;
+            this.skinbtnUpdate.Click += new System.EventHandler(this.SkinbtnUpdate_Click);
+            // 
             // KaoQinInfo
             // 
+            this.AcceptButton = this.btnQurry;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(679, 327);
+            this.Controls.Add(this.skinbtnUpdate);
+            this.Controls.Add(this.skinLabel1);
+            this.Controls.Add(this.btnQurry);
             this.Controls.Add(this.btnExport);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.ctnQurry);
             this.Controls.Add(this.txtStuNo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KaoQinInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "考勤信息";
             this.Load += new System.EventHandler(this.KaoQinInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -195,14 +220,15 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtStuNo;
-        private System.Windows.Forms.Button ctnQurry;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridViewTextBoxColumn stu_no;
         private System.Windows.Forms.DataGridViewTextBoxColumn stu_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn class_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn course_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn atttendence_no;
         private CCWin.SkinControl.SkinButton btnExport;
+        private CCWin.SkinControl.SkinButton btnQurry;
+        private CCWin.SkinControl.SkinLabel skinLabel1;
+        private CCWin.SkinControl.SkinButton skinbtnUpdate;
     }
 }

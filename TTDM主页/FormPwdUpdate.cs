@@ -51,5 +51,10 @@ namespace TTDM主页
                 MessageBox.Show("密码错误");
             }
         }
+
+        private void FormPwdUpdate_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

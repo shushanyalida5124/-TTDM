@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCNo = new System.Windows.Forms.TextBox();
-            this.btnAddCourse = new System.Windows.Forms.Button();
+            this.skinBtnAdd = new CCWin.SkinControl.SkinButton();
             this.SuspendLayout();
             // 
             // label1
@@ -69,24 +70,28 @@
             this.txtCNo.Size = new System.Drawing.Size(100, 21);
             this.txtCNo.TabIndex = 1;
             // 
-            // btnAddCourse
+            // skinBtnAdd
             // 
-            this.btnAddCourse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddCourse.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnAddCourse.Location = new System.Drawing.Point(116, 117);
-            this.btnAddCourse.Name = "btnAddCourse";
-            this.btnAddCourse.Size = new System.Drawing.Size(84, 23);
-            this.btnAddCourse.TabIndex = 2;
-            this.btnAddCourse.Text = "添加课程";
-            this.btnAddCourse.UseVisualStyleBackColor = true;
-            this.btnAddCourse.Click += new System.EventHandler(this.BtnAddCourse_Click);
+            this.skinBtnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.skinBtnAdd.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinBtnAdd.DownBack = null;
+            this.skinBtnAdd.Location = new System.Drawing.Point(112, 114);
+            this.skinBtnAdd.MouseBack = null;
+            this.skinBtnAdd.Name = "skinBtnAdd";
+            this.skinBtnAdd.NormlBack = null;
+            this.skinBtnAdd.Size = new System.Drawing.Size(110, 29);
+            this.skinBtnAdd.TabIndex = 3;
+            this.skinBtnAdd.Text = "添加课程";
+            this.skinBtnAdd.UseVisualStyleBackColor = false;
+            this.skinBtnAdd.Click += new System.EventHandler(this.SkinBtnAdd_Click);
             // 
             // FormAddCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(330, 167);
-            this.Controls.Add(this.btnAddCourse);
+            this.Controls.Add(this.skinBtnAdd);
             this.Controls.Add(this.txtCNo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCName);
@@ -104,6 +109,6 @@
         private System.Windows.Forms.TextBox txtCName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCNo;
-        private System.Windows.Forms.Button btnAddCourse;
+        private CCWin.SkinControl.SkinButton skinBtnAdd;
     }
 }

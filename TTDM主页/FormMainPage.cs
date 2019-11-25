@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TTDM_BLL;
 using System.Collections.Generic;
 using System.Collections;
+using System.Threading;
 
 
 namespace TTDM主页
@@ -48,7 +49,7 @@ namespace TTDM主页
             rolledStudents.Add(luckyStu);
             label1.Text = luckyStu.StuName;
             label2.Text = luckyStu.StuID;
-            luckyStu.Report();
+            new Thread(luckyStu.Report).Start();
             DialogResult result= MessageBox.Show("学生是否到了","",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (result==DialogResult.No)
             {
