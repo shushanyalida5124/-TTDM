@@ -129,7 +129,7 @@ namespace TTDM主页
                 sql = string.Format("select t_student.stu_no,t_student.stu_name,attendence_no,class_name,t_course.course_name from t_student join t_sc on " +
               "t_student.stu_no=t_sc.stu_no join t_course on" +
               " t_sc.course_no=t_course.course_no where " +
-              "t_student.stu_no='{0}' and stu_name='{1}' and user_id='{1}'", strNo, strName, user.ID);
+              "t_student.stu_no='{0}' and stu_name='{1}' and user_id='{2}'", strNo, strName, user.ID);
             }
             else
             {
