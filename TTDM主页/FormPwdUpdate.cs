@@ -43,7 +43,7 @@ namespace TTDM主页
             if (u.IsUserValid() && strNewPwd1 == strNewPwd2)
             {
                 user.UpdatePwd(strNewPwd1);
-                MessageBox.Show("修改成功");
+                MessageBox.Show("修改成功");     
                 this.Close();
             }
             else

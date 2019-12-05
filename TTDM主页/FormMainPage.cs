@@ -31,20 +31,29 @@ namespace TTDM主页
         {
             Student luckyStu;
             bool isRolled;
+            int i=0;
             do
             {
                 luckyStu = user.Roll();
                 isRolled = false;
+                i++;
                 foreach (Student stu in rolledStudents)
-                {
-                    if (rolledStudents.Count!=0&& stu.StuID==luckyStu.StuID)
                     {
-                        isRolled = true;
-                        break;
+                        if (rolledStudents.Count != 0 && stu.StuID == luckyStu.StuID)
+                        {
+                            isRolled = true;
+                            break;
+                        }
                     }
-                }
+                
+               
             }
-            while (isRolled);
+            while (isRolled&&i<200);
+            if (i>=200)
+            {
+                MessageBox.Show("已点完所有学生");
+                return;
+            }
 
             rolledStudents.Add(luckyStu);
             label1.Text = luckyStu.StuName;
@@ -92,6 +101,11 @@ namespace TTDM主页
         private void CheckBox4_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

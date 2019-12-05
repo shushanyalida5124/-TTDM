@@ -93,7 +93,7 @@ namespace TTDM主页
 
         private void BtnExport_Click(object sender, EventArgs e)
         {
-             string filename= @"C:\Users\he\Desktop\考勤.txt";
+             string filename= @"考勤.txt";
             if (dt.Rows.Count==0||dt==null)
             {
                 MessageBox.Show("学生信息为空");

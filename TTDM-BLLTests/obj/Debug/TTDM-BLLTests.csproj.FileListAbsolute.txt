@@ -1,2 +1,0 @@
-E:\Git\-TTDM\TTDM-BLLTests\obj\Debug\TTDM-BLLTests.csprojAssemblyReference.cache
-E:\Git\-TTDM\TTDM-BLLTests\obj\Debug\TTDM-BLLTests.csproj.CoreCompileInputs.cache
